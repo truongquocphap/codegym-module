@@ -1,0 +1,88 @@
+{
+  "product": [
+    {
+      "id": 2,
+      "name": "IPhone 11",
+      "price": 1560000,
+      "description": "Like new",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 3,
+      "name": "IPhone X",
+      "price": 968000,
+      "description": "97%",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 4,
+      "name": "IPhone 8",
+      "price": 7540000,
+      "description": "98%",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 5,
+      "name": "IPhone 11 Pro",
+      "price": 1895000,
+      "description": "Like new",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 124,
+      "name": "124",
+      "price": 2141,
+      "description": "1241",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 1234,
+      "name": "Phap CP",
+      "price": 123,
+      "description": "1243",
+      "category": {
+        "id": 1,
+        "name": "cp"
+      }
+    },
+    {
+      "id": 124124,
+      "name": "214",
+      "price": 4214,
+      "description": "1241",
+      "category": {
+        "id": 3,
+        "name": "cpde"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "cp"
+    },
+    {
+      "id": 2,
+      "name": "cpd"
+    },
+    {
+      "id": 3,
+      "name": "cpde"
+    }
+  ]
+}

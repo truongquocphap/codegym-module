@@ -1,0 +1,108 @@
+<form method="post" style="margin-left: 300px" [formGroup]="createEmployee">
+  <h4 style="color: #007bff">Create Employee Page</h4>
+  <input type="hidden">
+
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" class="form-control" formControlName="employeeName"/>
+        <div
+          *ngIf="!createEmployee.controls.employeeName?.valid && (createEmployee.controls.employeeName?.dirty
+   ||createEmployee.controls.employeeName?.touched)" style="color: red">
+          Tên không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td><input type="date" class="form-control" formControlName="birthday"/>
+
+      </td>
+    </tr>
+    <tr>
+      <td>Id Card:</td>
+      <td><input type="text" class="form-control" formControlName="employeeIdCart"/>
+        <div
+          *ngIf="!createEmployee.controls.employeeIdCart?.valid && (createEmployee.controls.employeeIdCart?.dirty
+   ||createEmployee.controls.employeeIdCart?.touched)" style="color: red">
+          Id Card không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Salary:</td>
+      <td><input type="text" class="form-control" formControlName="employeeSalary"/>
+        <div
+          *ngIf="!createEmployee.controls.employeeSalary?.valid && (createEmployee.controls.employeeSalary?.dirty
+   ||createEmployee.controls.employeeSalary?.touched)" style="color: red">
+          Tiền lương phải lớn hơn 0!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td><input type="text" class="form-control" formControlName="employeePhone"/>
+        <div
+          *ngIf="!createEmployee.controls.employeePhone?.valid && (createEmployee.controls.employeePhone?.dirty
+   ||createEmployee.controls.employeePhone?.touched)" style="color: red">
+         	Số điện thoại phải đúng định dạng 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" class="form-control" formControlName="employeeEmail"/>
+        <div
+          *ngIf="!createEmployee.controls.employeeEmail?.valid && (createEmployee.controls.employeeEmail?.dirty
+   ||createEmployee.controls.employeeEmail?.touched)" style="color: red">
+          Email phải đúng định dạng abc@gmail.com!!!
+        </div>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type="text" class="form-control" formControlName="employeeAddress"/>
+        <div
+          *ngIf="!createEmployee.controls.employeeAddress?.valid && (createEmployee.controls.employeeAddress?.dirty
+   ||createEmployee.controls.employeeAddress?.touched)" style="color: red">
+          Địa chỉ không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Position:</td>
+      <td>
+        <select class="form-control" formControlName="employeeName">
+          <option
+          ></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Education:</td>
+      <td>
+        <select class="form-control" formControlName="employeeName">
+          <option></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Division:</td>
+      <td>
+        <select class="form-control" formControlName="employeeName">
+          <option
+          ></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button>
+          <a> Back to Employee List</a>
+        </button>
+      </td>
+      <td><input type="submit" value="Create Employee"></td>
+    </tr>
+  </table>
+</form>

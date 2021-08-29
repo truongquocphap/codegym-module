@@ -1,0 +1,118 @@
+<form method="post" style="margin-left: 300px" [formGroup]="createService" >
+  <h4 style="color: #007bff">Create Service Page</h4>
+  <input type="hidden" >
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" class="form-control" formControlName="serviceName"/>
+        <div
+          *ngIf="!createService.controls.serviceName?.valid && (createService.controls.serviceName?.dirty
+   ||createService.controls.serviceName?.touched)" style="color: red">
+          Tên không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Area:</td>
+      <td><input type="text" class="form-control"  formControlName="serviceArea"/>
+        <div
+          *ngIf="!createService.controls.serviceArea?.valid && (createService.controls.serviceArea?.dirty
+   ||createService.controls.serviceArea?.touched)" style="color: red">
+          Area phải lớn hơn 20m2!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Cost:</td>
+      <td><input type="text" class="form-control"  formControlName="serviceCost"/>
+        <div
+          *ngIf="!createService.controls.serviceCost?.valid && (createService.controls.serviceCost?.dirty
+   ||createService.controls.serviceCost?.touched)" style="color: red">
+          Cost phải lớn hơn 0!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Max PeoPle:</td>
+      <td><input type="text" class="form-control"  formControlName="maxPeople"/>
+        <div
+          *ngIf="!createService.controls.maxPeople?.valid && (createService.controls.maxPeople?.dirty
+   ||createService.controls.maxPeople?.touched)" style="color: red">
+          Max people phải lớn hơn 0!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Standard Room:</td>
+      <td><input type="text" class="form-control"  formControlName="standardRoom"/>
+        <div
+          *ngIf="!createService.controls.standardRoom?.valid && (createService.controls.standardRoom?.dirty
+   ||createService.controls.standardRoom?.touched)" style="color: red">
+          Trường không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" class="form-control"  formControlName="description"/>
+        <div
+          *ngIf="!createService.controls.description?.valid && (createService.controls.description?.dirty
+   ||createService.controls.description?.touched)" style="color: red">
+          Trường không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Pool Area:</td>
+      <td><input type="text" class="form-control"  formControlName="poolArea"/>
+        <div
+          *ngIf="!createService.controls.poolArea?.valid && (createService.controls.poolArea?.dirty
+   ||createService.controls.poolArea?.touched)" style="color: red">
+          Pool Area phải lớn hơn 0!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Service Code:</td>
+      <td><input type="text" class="form-control"  formControlName="serviceCode"/>
+        <div
+          *ngIf="!createService.controls.serviceCode?.valid && (createService.controls.serviceCode?.dirty
+   ||createService.controls.serviceCode?.touched)" style="color: red">
+          Nhập đúng định dạng DV-XXXX(X là số)
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Number Floors:</td>
+      <td><input type="text" class="form-control"  formControlName="numberFloors"/>
+        <div
+          *ngIf="!createService.controls.numberFloors?.valid && (createService.controls.numberFloors?.dirty
+   ||createService.controls.numberFloors?.touched)" style="color: red">
+          Number Floors phải lớn hơn 0!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Rent Type:</td>
+      <td>
+        <select class="form-control"  formControlName="serviceName">
+          <option ></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Service Type:</td>
+      <td>
+        <select class="form-control"  formControlName="serviceName">
+          <option ></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a class="btn btn-warning" role="button"> Back to Service List</a>
+      </td>
+      <td><input type="submit" value="Create Service"></td>
+    </tr>
+  </table>
+</form>

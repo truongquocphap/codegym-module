@@ -1,0 +1,789 @@
+{
+  "employees": [
+    {
+      "employeeName": "Nhi",
+      "birthday": "2021-08-26",
+      "employeeIdCard": "111211111",
+      "employeeSalary": 123,
+      "employeePhone": "0901111111",
+      "employeeEmail": "nhi@gmail.com",
+      "employeeAddress": "Nghệ An",
+      "position": {
+        "id": 1,
+        "positionName": "Lễ Tân"
+      },
+      "educationEmployee": {
+        "id": 1,
+        "educationName": "Trung cấp"
+      },
+      "divisionEmployee": {
+        "id": 1,
+        "divisionName": "Sale-Marketing"
+      },
+      "id": 2
+    }
+  ],
+  "position": [
+    {
+      "id": 1,
+      "positionName": "Lễ Tân"
+    },
+    {
+      "id": 2,
+      "positionName": "Phục Vụ"
+    },
+    {
+      "id": 3,
+      "positionName": "Chuyên viên"
+    },
+    {
+      "id": 4,
+      "positionName": "Giám sát"
+    },
+    {
+      "id": 5,
+      "positionName": "Quản lý"
+    },
+    {
+      "id": 6,
+      "positionName": "Giám đốc"
+    }
+  ],
+  "division": [
+    {
+      "id": 1,
+      "divisionName": "Sale-Marketing"
+    },
+    {
+      "id": 2,
+      "divisionName": "Hành chính"
+    },
+    {
+      "id": 3,
+      "divisionName": "Phục vụ"
+    },
+    {
+      "id": 4,
+      "divisionName": "Quản lý"
+    }
+  ],
+  "educationDegree": [
+    {
+      "id": 1,
+      "educationDegreeName": "Trung cấp"
+    },
+    {
+      "id": 2,
+      "educationDegreeName": "Cao đẳng"
+    },
+    {
+      "id": 3,
+      "educationDegreeName": "Đại học"
+    },
+    {
+      "id": 4,
+      "educationDegreeName": "Sau Đại học"
+    }
+  ],
+  "rentType": [
+    {
+      "id": 1,
+      "rentTypeName": "Year",
+      "rentTypeCost": "1000000"
+    },
+    {
+      "id": 2,
+      "rentTypeName": "Month",
+      "rentTypeCost": "500000"
+    },
+    {
+      "id": 3,
+      "rentTypeName": "Day",
+      "rentTypeCost": "200000"
+    },
+    {
+      "id": 4,
+      "rentTypeName": "Hour",
+      "rentTypeCost": "50000"
+    }
+  ],
+  "serviceType": [
+    {
+      "id": 1,
+      "serviceTypeName": "Villa"
+    },
+    {
+      "id": 2,
+      "serviceTypeName": "House"
+    },
+    {
+      "id": 3,
+      "serviceTypeName": "Room"
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "customerTypeName": "Diamond"
+    },
+    {
+      "id": 2,
+      "customerTypeName": "Platinium"
+    },
+    {
+      "id": 3,
+      "customerTypeName": "Gold"
+    },
+    {
+      "id": 4,
+      "customerTypeName": "Silver"
+    },
+    {
+      "id": 5,
+      "customerTypeName": "Member"
+    }
+  ],
+  "customer": [
+    {
+      "customerCode": "KH-0000",
+      "customerType": {
+        "id": 4,
+        "customerTypeName": "Silver"
+      },
+      "customerName": "Hic",
+      "birthday": "2021-08-28",
+      "gender": 1,
+      "idCard": "111111111",
+      "phone": "0901111111",
+      "email": "nhung@gmail.com",
+      "address": "Nghệ An",
+      "id": 4
+    },
+    {
+      "customerName": "Khoas hocs",
+      "birthday": "2021-08-02",
+      "customerCode": "KH-1234",
+      "gender": 2,
+      "idCard": "1111111",
+      "phone": "0901111111",
+      "email": "phasp@gmail.com",
+      "address": "quang ngai",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Platinium"
+      },
+      "id": 5
+    },
+    {
+      "id": 6,
+      "customerName": "123",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-0000",
+      "gender": 2,
+      "idCard": "213",
+      "phone": "0900000000",
+      "email": "CP@gmail.com",
+      "address": "QN",
+      "customerType": {
+        "id": 5,
+        "customerTypeName": "Member"
+      }
+    },
+    {
+      "id": 7,
+      "customerName": "123",
+      "birthday": "2021-08-14",
+      "customerCode": "KH-1111",
+      "gender": 0,
+      "idCard": "213",
+      "phone": "0900000000",
+      "email": "2234@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 3,
+        "customerTypeName": "Gold"
+      }
+    },
+    {
+      "id": 8,
+      "customerName": "123",
+      "birthday": "2021-08-13",
+      "customerCode": "KH-1111",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "123@gmail",
+      "address": "qqq",
+      "customerType": {
+        "id": 4,
+        "customerTypeName": "Silver"
+      }
+    },
+    {
+      "id": 9,
+      "customerName": "qưda",
+      "birthday": "2021-08-12",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "adaas",
+      "phone": "0900000000",
+      "email": "mâm@gmail.com",
+      "address": "qn",
+      "customerType": ""
+    },
+    {
+      "id": 10,
+      "customerName": "qwe",
+      "birthday": "2021-08-12",
+      "customerCode": "KH-1222",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "546@d",
+      "address": "asd",
+      "customerType": {
+        "id": 3,
+        "customerTypeName": "Gold"
+      }
+    },
+    {
+      "id": 11,
+      "customerName": "ac",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "acs",
+      "phone": "0900000000",
+      "email": "abc@gmail.com",
+      "address": "qn",
+      "customerType": {
+        "id": 4,
+        "customerTypeName": "Silver"
+      }
+    },
+    {
+      "id": 12,
+      "customerName": "áddsa",
+      "birthday": "2021-08-14",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "ád",
+      "phone": "0900000000",
+      "email": "ad@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      }
+    },
+    {
+      "customerName": "qw",
+      "birthday": "2021-08-12",
+      "customerCode": "KH-1111",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "cb@gmail",
+      "address": "QN",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 13
+    },
+    {
+      "customerName": "qw",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-8888",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "12@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 14
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-07",
+      "customerCode": "KH-0000",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "124@gmai",
+      "address": "qn",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Platinium"
+      },
+      "id": 15
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-0000",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "ac@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 16
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-14",
+      "customerCode": "KH-0000",
+      "gender": 2,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "cb@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 17
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-9999",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0901111111",
+      "email": "111@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 18
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-07-02",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0901111111",
+      "email": "1223@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 19
+    },
+    {
+      "customerName": "qwe",
+      "birthday": "2021-08-11",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "123@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 20
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "213",
+      "phone": "0901111111",
+      "email": "123@gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 21
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-04",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "213@Gmail",
+      "address": "qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 22
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-05",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "ec@email.com",
+      "address": "QN",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 23
+    },
+    {
+      "customerName": "asd",
+      "birthday": "2021-08-29",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "email@g",
+      "address": "qn",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Platinium"
+      },
+      "id": 24
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-13",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "090",
+      "phone": "0900000000",
+      "email": "cb@gmail",
+      "address": "QN",
+      "customerType": {
+        "id": 4,
+        "customerTypeName": "Silver"
+      },
+      "id": 25
+    },
+    {
+      "customerName": "123",
+      "birthday": "2021-08-13",
+      "customerCode": "KH-0000",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0901111111",
+      "email": "ac@gma",
+      "address": "qn",
+      "customerType": {
+        "id": 5,
+        "customerTypeName": "Member"
+      },
+      "id": 26
+    },
+    {
+      "customerName": "asd",
+      "birthday": "2021-08-07",
+      "customerCode": "KH-1111",
+      "gender": 1,
+      "idCard": "123",
+      "phone": "0900000000",
+      "email": "ac@gmail",
+      "address": "Qn",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      },
+      "id": 27
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "serviceCode": "SV-0000",
+      "serviceName": "Vip1",
+      "serviceArea": 123,
+      "serviceCost": 123,
+      "maxPeople": 1,
+      "rentType": {
+        "id": 1,
+        "rentTypeName": "Year",
+        "rentTypeCost": "1000000"
+      },
+      "serviceType": {
+        "id": 1,
+        "serviceTypeName": "Villa"
+      },
+      "standardRoom": "1 sao",
+      "description": "không",
+      "poolArea": 20,
+      "numberFloors": 10
+    }
+  ],
+  "attachService": [
+    {
+      "id": 1,
+      "attachServiceName": "Massage",
+      "attachServiceCost": 100000,
+      "attachServiceUnit": 1,
+      "attachServiceStatus": "empty"
+    },
+    {
+      "id": 2,
+      "attachServiceName": "Karaoke",
+      "attachServiceCost": 100000,
+      "attachServiceUnit": 1,
+      "attachServiceStatus": "empty"
+    },
+    {
+      "id": 3,
+      "attachServiceName": "Food",
+      "attachServiceCost": 50000,
+      "attachServiceUnit": 1,
+      "attachServiceStatus": "empty"
+    },
+    {
+      "id": 4,
+      "attachServiceName": "Drink",
+      "attachServiceCost": 20000,
+      "attachServiceUnit": 1,
+      "attachServiceStatus": "empty"
+    },
+    {
+      "id": 5,
+      "attachServiceName": "Car",
+      "attachServiceCost": 200000,
+      "attachServiceUnit": 1,
+      "attachServiceStatus": "empty"
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "contractStartDate": "22/08/2020",
+      "contractEndDate": "22/08/2021",
+      "contractDeposit": 123,
+      "contractTotalMoney": 1000000,
+      "employee": {
+        "employeeCode": "123",
+        "employeeName": "nhung",
+        "birthday": "2021-08-26",
+        "employeeIdCard": "12",
+        "employeeSalary": "1",
+        "employeePhone": "123",
+        "employeeEmail": "gđaaaaa",
+        "employeeAddress": "hi",
+        "position": {
+          "id": 1,
+          "positionName": "Lễ Tân"
+        },
+        "education": {
+          "id": 1,
+          "educationName": "Trung cấp"
+        },
+        "division": {
+          "id": 1,
+          "divisionName": "Sale-Marketing"
+        },
+        "id": 13
+      },
+      "customer": {
+        "id": 1,
+        "customerCode": "KH-0000",
+        "customerType": {
+          "id": 4,
+          "customerTypeName": "Silver"
+        },
+        "customerName": "Tuyết",
+        "birthday": "01/03/2000",
+        "gender": 1,
+        "idCard": 123,
+        "phone": 123,
+        "email": "abc",
+        "address": "xyz"
+      },
+      "service": {
+        "id": 1,
+        "serviceCode": "SV-0000",
+        "serviceName": "Vip1",
+        "serviceArea": 123,
+        "serviceCost": 123,
+        "maxPeople": 1,
+        "rentType": {
+          "id": 1,
+          "rentTypeName": "Year",
+          "rentTypeCost": "1000000"
+        },
+        "serviceType": {
+          "id": 1,
+          "serviceTypeName": "Villa"
+        },
+        "standardRoom": "1 sao",
+        "description": "không",
+        "poolArea": 20,
+        "numberFloors": 10
+      }
+    }
+  ],
+  "contractDetail": [
+    {
+      "id": 1,
+      "contract": {
+        "id": 1,
+        "contractStartDate": "22/08/2020",
+        "contractEndDate": "22/08/2021",
+        "contractDeposit": 123,
+        "contractTotalMoney": 1000000,
+        "employee": {
+          "employeeCode": "123",
+          "employeeName": "nhung",
+          "employeeBirthday": "2021-08-26",
+          "employeeIdCard": "12",
+          "employeeSalary": "1",
+          "employeePhone": "123",
+          "employeeEmail": "gđaaaaa",
+          "employeeAddress": "hi",
+          "position": {
+            "id": 1,
+            "positionName": "Lễ Tân"
+          },
+          "education": {
+            "id": 1,
+            "educationName": "Trung cấp"
+          },
+          "division": {
+            "id": 1,
+            "divisionName": "Sale-Marketing"
+          },
+          "id": 13
+        },
+        "customer": {
+          "id": 1,
+          "customerCode": "KH-0000",
+          "customerType": {
+            "id": 4,
+            "customerTypeName": "Silver"
+          },
+          "customerName": "Tuyết",
+          "birthday": "01/03/2000",
+          "gender": 1,
+          "idCard": 123,
+          "phone": 123,
+          "email": "abc",
+          "address": "xyz"
+        },
+        "service": {
+          "id": 1,
+          "serviceCode": "SV-0000",
+          "serviceName": "Vip1",
+          "serviceArea": 123,
+          "serviceCost": 123,
+          "serviceMaxPeople": 1,
+          "rentType": {
+            "id": 1,
+            "rentTypeName": "Year",
+            "rentTypeCost": "1000000"
+          },
+          "serviceType": {
+            "id": 1,
+            "serviceTypeName": "Villa"
+          },
+          "standardRoom": "1 sao",
+          "descriptionOtherConvenience": "không",
+          "poolArea": 20,
+          "numberOfFloor": 10
+        }
+      },
+      "attachService": {
+        "id": 1,
+        "attachServiceName": "Massage",
+        "attachServiceCost": 100000,
+        "attachServiceUnit": 1,
+        "attachServiceStatus": "empty"
+      },
+      "quantity": 123
+    },
+    {
+      "contract": {
+        "contractStartDate": "2021-08-20",
+        "contractEndDate": "2021-08-27",
+        "contractDeposit": "1",
+        "contractTotalMoney": "12",
+        "employee": {
+          "employeeCode": "NV-1111",
+          "employeeName": "dddd",
+          "employeeBirthday": "2021-08-26",
+          "employeeIdCard": "111111111",
+          "employeeSalary": "123",
+          "employeePhone": "0901111111",
+          "employeeEmail": "fffffffff",
+          "employeeAddress": "s",
+          "position": {
+            "id": 3,
+            "positionName": "Chuyên viên"
+          },
+          "educationDegree": {
+            "id": 4,
+            "educationDegreeName": "Sau Đại học"
+          },
+          "division": {
+            "id": 3,
+            "divisionName": "Phục vụ"
+          },
+          "id": 24
+        },
+        "customer": {
+          "customerCode": "KH-0000",
+          "customerType": {
+            "id": 4,
+            "customerTypeName": "Silver"
+          },
+          "customerName": "Hic",
+          "customerBirthday": "2021-08-28",
+          "customerGender": 1,
+          "customerIdCard": "111111111",
+          "customerPhone": "0901111111",
+          "customerEmail": "nhung@gmail.com",
+          "customerAddress": "Nghệ An",
+          "id": 4
+        },
+        "service": {
+          "id": 1,
+          "serviceCode": "SV-0000",
+          "serviceName": "Vip1",
+          "serviceArea": 123,
+          "serviceCost": 123,
+          "maxPeople": 1,
+          "rentType": {
+            "id": 1,
+            "rentTypeName": "Year",
+            "rentTypeCost": "1000000"
+          },
+          "serviceType": {
+            "id": 1,
+            "serviceTypeName": "Villa"
+          },
+          "standardRoom": "1 sao",
+          "description": "không",
+          "poolArea": 20,
+          "numberFloors": 10
+        },
+        "id": 3
+      },
+      "attachService": {
+        "id": 3,
+        "attachServiceName": "Food",
+        "attachServiceCost": 50000,
+        "attachServiceUnit": 1,
+        "attachServiceStatus": "empty"
+      },
+      "quantity": "1",
+      "id": 2
+    }
+  ]
+}

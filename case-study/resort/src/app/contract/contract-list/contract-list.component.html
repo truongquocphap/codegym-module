@@ -1,0 +1,38 @@
+<a [routerLink]="['/contract-create']" class="btn btn-warning" style="margin: 10px 0 10px 0;">Create Contract</a>
+<table class="table table-success " style="width: 100%">
+  <thead>
+  <tr>
+    <td colspan="10"> Contract List</td>
+  </tr>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Start Date</th>
+    <th scope="col">End Date</th>
+    <th scope="col">Customer ID</th>
+    <!--    <th scope="col">Customer Code</th>-->
+    <th scope="col">Employee ID</th>
+    <th scope="col">Deposit</th>
+    <th scope="col">Total Money</th>
+    <th scope="col">Service ID</th>
+    <th scope="col"></th>
+    <th scope="col" style="column-span: 2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of contract,let i=index">
+    <th scope="col">{{i + 1}}</th>
+    <th scope="col">{{c.contractStartDate}}</th>
+    <th scope="col">{{c.contractEndDate}}</th>
+    <th scope="col">{{c.id}}</th>
+    <!--    <th scope="col">Customer Code</th>-->
+    <th scope="col">{{c.id}}</th>
+    <th scope="col">{{c.contractDeposit}}</th>
+    <th scope="col">{{c.contractTotalMoney}}</th>
+    <th scope="col">{{c.id}}</th>
+    <th scope="col">
+      <a [routerLink]="['/contract-edit',c.id]" class="btn btn-warning" role="button">Edit</a>
+    </th>
+    <th scope="col" [routerLink]="['/contract-delete',c.id]" class="btn btn-danger" role="button">Delete</th>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,39 @@
+<h2 class="text-center">Todo App</h2>
+<div class="col-md-8 offset-md-2">
+  <form [formGroup]="todoForm" (ngSubmit)="change()">
+    <input type="text" class="form-control" formControlName="content" >
+  </form>
+
+  <ul>
+    <li (click)="toggleTodo(i)" [class.complete]="todo.complete"
+    *ngFor="let todo of todos ;index as i">
+      {{todo.content}}
+    </li>
+  </ul>
+</div>
+<table>
+  <thead>
+  <tr >
+    <th>ID</th>
+    <th>Content</th>
+    <th> Complete</th>
+    <th> </th>
+    <th colspan="2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let todo of todos">
+    <th>
+      {{todo.id}}
+    </th>
+    <th>{{todo.content}}</th>
+    <th>{{todo.complete}}</th>
+    <th>
+      <a [routerLink]="['todo-edit',todo.id]">Edit</a>
+    </th>
+    <th>
+      <button  (click)="openDialog(todo.id)">Delete</button>
+    </th>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,110 @@
+
+<form  style="margin-left: 300px" [formGroup]="editCustomer"  (ngSubmit) ="updateCustomer()">
+  <h4 style="color: #007bff">Create Customer Page</h4>
+  <input type="hidden" formControlName="id">
+  <table >
+    <tr >
+      <td>Name:</td>
+      <td>
+        <input type="text" class="form-control" formControlName="customerName">
+        <div
+          *ngIf="!editCustomer.controls.customerName?.valid && (editCustomer.controls.customerName?.dirty
+   ||editCustomer.controls.customerName?.touched)" style="color: red">
+          First Name is not valid
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td><input type="date" formControlName="birthday" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <select  formControlName="gender">
+          <option value="1"> Male</option>
+          <option value="2">Female</option>
+          <option value="0">No Gender</option>
+        </select>
+        <div
+          *ngIf="!editCustomer.controls.gender?.valid && (editCustomer.controls.gender?.dirty
+   ||editCustomer.controls.gender?.touched)" style="color: red">
+          giới tính không được đeer trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Id Card:</td>
+      <td><input type="text" class="form-control" formControlName="idCard"/>
+        <div
+          *ngIf="!editCustomer.controls.idCard?.valid && (editCustomer.controls.idCard?.dirty
+   ||editCustomer.controls.idCard?.touched)" style="color: red">
+          Id Card Không được để trống!!!
+        </div>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td><input type="text" class="form-control" formControlName="phone"/>
+        <div style="color: red"
+             *ngIf="!editCustomer.controls.phone?.valid && (editCustomer.controls.phone?.dirty
+   ||editCustomer.controls.phone?.touched)">
+          Số điện thoại phải đúng định dạng 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx !!!
+        </div>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" class="form-control" formControlName="email"/>
+        <div
+          *ngIf="!editCustomer.controls.email?.valid && (editCustomer.controls.email?.dirty
+   ||editCustomer.controls.email?.touched)" style="color: red">
+          Email phải đúng định dạng abc@gmail.com!!!
+        </div>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type="text" class="form-control" formControlName="address"/>
+        <div style="color: red"
+             *ngIf="!editCustomer.controls.address?.valid && (editCustomer.controls.address?.dirty
+   ||editCustomer.controls.address?.touched)" >
+          Địa chỉ Không được để trống!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Code:</td>
+      <td><input type="text" class="form-control" formControlName="customerCode"/>
+        <div style="color: red"
+             *ngIf="!editCustomer.controls.customerCode?.valid && (editCustomer.controls.customerCode?.dirty
+   ||editCustomer.controls.customerCode?.touched)">
+          Code phải đúng định dạng KH-XXXX!!!
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Customer Type :</td>
+      <td>
+        <select  formControlName="customerType" class="form-control" [compareWith]="compareFn">
+          <option></option>
+          <option selected *ngFor="let ct of customerType" [ngValue]="ct" >
+            {{ct.customerTypeName}}
+          </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a [routerLink]="['/customer-list']" class="btn btn-danger" role="button"> Back to Customer List</a>
+      </td>
+      <td>
+        <button >Update Customer</button>
+      </td>
+    </tr>
+  </table>
+</form>
+

@@ -1,0 +1,52 @@
+<a [routerLink]="['/service-create']" class="btn btn-warning" role="button" style="margin: 10px 0 10px 0">Create Service</a>
+<table class="table table-success">
+  <thead>
+  <tr>
+    <th colspan="15">Service List</th>
+  </tr>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Name</th>
+    <th scope="col">Code</th>
+    <th scope="col">Area</th>
+    <th scope="col">Cost</th>
+    <th scope="col">Max People</th>
+    <th scope="col">Standard Room</th>
+    <th scope="col">Description</th>
+    <th scope="col">Pool Area</th>
+    <th scope="col">Number Floors</th>
+    <th scope="col">Rent Type</th>
+    <th scope="col">Service Type</th>
+    <th></th>
+    <th scope="col" style="column-span: 2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let s of service,let i=index">
+    <th scope="col">{{i + 1}}</th>
+    <th scope="col">{{s.serviceName}}</th>
+    <th scope="col">{{s.serviceCode}}</th>
+    <th scope="col">{{s.serviceArea}}</th>
+    <th scope="col">{{s.serviceCost}}</th>
+    <th scope="col">{{s.maxPeople}}</th>
+    <th scope="col">{{s.standardRoom}}</th>
+    <th scope="col">{{s.standardRoom}}</th>
+    <th scope="col">{{s.poolArea}}</th>
+    <th scope="col">{{s.numberFloors}}</th>
+    <th scope="col">
+      <span *ngFor="let rt of rentType">
+        <p *ngIf="s.rentTypeId===rt.id">{{rt.rentTypeName}}</p>
+      </span>
+    </th>
+    <th scope="col">
+       <span *ngFor="let st of serviceType">
+        <p *ngIf="s.rentTypeId===st.id">{{st.serviceTypeName}}</p>
+      </span>
+    </th>
+    <th>
+      <a [routerLink]="['/service-edit',s.id]" class="btn btn-warning" role="button"> Edit</a>
+    </th>
+    <th scope="col" [routerLink]="['/service-delete',s.id]" class="btn btn-danger" role="button">Delete</th>
+  </tr>
+  </tbody>
+</table>

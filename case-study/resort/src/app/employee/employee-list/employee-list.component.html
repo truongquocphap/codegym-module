@@ -1,0 +1,58 @@
+<a [routerLink]="['/employee-create']" class="btn btn-warning" role="button" style="margin: 10px 0 10px 0">Create Employee</a>
+<div class="table-responsive">
+<table class="table table-success" >
+  <thead>
+  <tr>
+    <th style="color: black" colspan="13">Employee List</th>
+  </tr>
+  <tr>
+    <th >STT</th>
+    <th >Name</th>
+    <th >Birthday</th>
+    <th >Id Card</th>
+    <th >Salary</th>
+    <th >Phone</th>
+    <th >Email</th>
+    <th >Address</th>
+    <th >IPosition</th>
+    <th >Ieducation</th>
+    <th >Idivision</th>
+    <th ></th>
+    <th  style="column-span: 2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ep of employee,let i = index">
+    <th >{{i + 1}}</th>
+    <th >{{ep.employeeName}}</th>
+    <th >{{ep.birthday}}</th>
+    <th >{{ep.employeeIdCart}}</th>
+    <th >{{ep.employeeSalary}}</th>
+    <th >{{ep.employeePhone}}</th>
+    <th >{{ep.employeeEmail}}</th>
+    <th >{{ep.employeeAddress}}</th>
+    <th >
+       <span *ngFor="let po of position">
+      <p *ngIf="ep.positionId===po.id"> {{po.positionName}}</p>
+      </span>
+    </th>
+    <th >
+       <span *ngFor="let edu of education">
+      <p *ngIf="ep.educationEmployeeId===edu.id"> {{edu.educationName}}</p>
+      </span>
+    </th>
+    <th >
+     <span *ngFor="let di of division">
+      <p *ngIf="ep.divisionEmployeeId===di.id"> {{di.divisionName}}</p>
+      </span>
+    </th>
+    <th >
+      <a [routerLink]="['/employee-edit',ep.id]" class="btn btn-warning" role="button">Edit</a>
+    </th>
+    <th >
+      <a [routerLink]="['/employee-delete',ep.id]" class="btn btn-danger" role="button">Delete</a>
+    </th>
+  </tr>
+  </tbody>
+</table>
+</div>

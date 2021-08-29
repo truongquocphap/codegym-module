@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-6">
+    <a [routerLink]="['/customer-create']" class="btn btn-warning" role="button">Create Customer</a>
+  </div>
+  <div class="col-4">
+    <input class="form-control " type="search" placeholder="Search">
+  </div>
+  <div class="col-2">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </div>
+</div>
+<table class="table table-success ">
+  <thead>
+  <tr>
+    <th style="color: black;" colspan="12">Customer List</th>
+  </tr>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Id Card</th>
+    <th scope="col">Phone</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Customer Code</th>
+    <th scope="col">Customer Type</th>
+    <th scope="col"></th>
+    <th scope="col" colspan="2">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customersList , let i=index">
+    <th scope="col">{{i + 1}}</th>
+    <th scope="col">{{customer.customerName}}</th>
+    <th scope="col">{{customer.birthday}}</th>
+    <th scope="col" *ngIf="customer.gender===1 ">Male</th>
+    <th scope="col" *ngIf="customer.gender===2 ">FeMale</th>
+    <th scope="col" *ngIf="customer.gender===0 ">No Gender</th>
+    <th scope="col">{{customer.idCart}}</th>
+    <th scope="col">{{customer.phone}}</th>
+    <th scope="col">{{customer.email}}</th>
+    <th scope="col">{{customer.address}}</th>
+    <th scope="col">{{customer.customerCode}}</th>
+    <th scope="col">{{customer.customerType.customerTypeName}}</th>
+    <th scope="col">
+      <a [routerLink]="['/customer-edit',customer.id]" class="btn btn-warning" role="button"> Edit</a>
+    </th>
+    <th scope="col">
+      <a (click)="openDialog(customer.id)" class="btn btn-danger" role="button"> Delete</a>
+    </th>
+  </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,8 @@
+<h2 class="text-center">Edit Todo App</h2>
+<form [formGroup]="editTodo" (ngSubmit)="update()">
+  <input type="text" class="form-control" formControlName="content" >
+</form>
+
+<div class="alert alert-success" role="alert" [hidden]="alert">
+  A simple success alert—check it out!
+</div>
