@@ -1,0 +1,31 @@
+<h1>câp nhật phẩm</h1>
+<button><a routerLink="/">back to list</a></button>
+<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">
+  <input type="hidden" formControlName="id">
+  <table>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Giá sản phẩm</td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Mô tả về sản phẩm</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td>Danh mục</td>
+      <td>
+        <select  class="form-control" formControlName="category" >
+            <option  *ngFor="let category of categorys " [ngValue]="category">{{category.name}}</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Cập nhật</button></td>
+    </tr>
+  </table>
+</form>

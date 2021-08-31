@@ -1,0 +1,14 @@
+<h1>câp nhật phẩm mới</h1>
+<form [formGroup]="editForm" (ngSubmit)="updateProduct(id)">
+  <input type="hidden" formControlName="id">
+  <table>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Cập nhật</button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,5 @@
+::ng-deep snack-bar-container.alert-red{
+  padding: 20px;
+  background-color: gold;
+  color: #1b1e21;
+}

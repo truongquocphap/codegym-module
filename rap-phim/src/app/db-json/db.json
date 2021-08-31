@@ -1,0 +1,74 @@
+{
+  "rapChieuPhim": [
+    {
+      "id": 2,
+      "maXuatChieu": "CI-1121",
+      "xuatChieu": {
+        "id": 2,
+        "tenPhim": "chuyen tinh 2 nguoi"
+      },
+      "ngayChieu": "1111-11-11",
+      "soLuongVe": 10
+    },
+    {
+      "maXuatChieu": "CI-0000",
+      "xuatChieu": {
+        "id": 1,
+        "tenPhim": "chuyen tinh tay ba"
+      },
+      "ngayChieu": "2021-08-12",
+      "soLuongVe": 1,
+      "id": 3
+    },
+    {
+      "maXuatChieu": "CI-1111",
+      "xuatChieu": {
+        "id": 2,
+        "tenPhim": "chuyen tinh 2 nguoi"
+      },
+      "ngayChieu": "2021-08-12",
+      "soLuongVe": 1,
+      "id": 4
+    },
+    {
+      "maXuatChieu": "CI-1111",
+      "xuatChieu": {
+        "id": 2,
+        "tenPhim": "chuyen tinh 2 nguoi"
+      },
+      "ngayChieu": "2021-08-19",
+      "soLuongVe": 2,
+      "id": 5
+    },
+    {
+      "maXuatChieu": "CI-1111",
+      "xuatChieu": {
+        "id": 1,
+        "tenPhim": "chuyen tinh tay ba"
+      },
+      "ngayChieu": "2021-08-14",
+      "soLuongVe": 1,
+      "id": 6
+    },
+    {
+      "maXuatChieu": "CI-0101",
+      "xuatChieu": {
+        "id": 2,
+        "tenPhim": "chuyen tinh 2 nguoi"
+      },
+      "ngayChieu": "2021-08-11",
+      "soLuongVe": 1,
+      "id": 7
+    }
+  ],
+  "xuatChieu": [
+    {
+      "id": 2,
+      "tenPhim": "chuyen tinh 2 nguoi"
+    },
+    {
+      "id": 1,
+      "tenPhim": "chuyen tinh tay ba"
+    }
+  ]
+}

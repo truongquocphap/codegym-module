@@ -1,0 +1,56 @@
+
+<form  style="margin-left: 300px" [formGroup]="createMovie"  (ngSubmit) ="addRapPhim()">
+  <h4 style="color: #007bff">Create Customer Page</h4>
+  <input type="hidden" >
+  <table >
+    <tr >
+      <td>Mã Rạp phim:</td>
+      <td>
+        <input type="text" class="form-control" formControlName="maXuatChieu">
+        <div
+          *ngIf="!createMovie.controls.maXuatChieu?.valid && (createMovie.controls.maXuatChieu?.dirty
+   ||createMovie.controls.maXuatChieu?.touched)" style="color: red">
+          Mã xuất phim không hợp lệ (CI-XXXX)
+        </div>
+        <div [hidden]="alert" style="color: red"> Mã code bị trùng nhau mời nhập lại!!!</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ngày Chiếu:</td>
+      <td><input type="date" formControlName="ngayChieu" class="form-control"/></td>
+    </tr>
+
+    <tr>
+      <td>Số lượng vé</td>
+      <td><input type="number" class="form-control" formControlName="soLuongVe"/>
+        <div
+          *ngIf="!createMovie.controls.soLuongVe?.valid && (createMovie.controls.soLuongVe?.dirty
+   ||createMovie.controls.soLuongVe?.touched)" style="color: red">
+          Số lượng vé lớn hơn 0!!!
+        </div>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Xuất Chiếu:</td>
+      <td>
+        <select  formControlName="xuatChieu" class="form-control" >
+          <option></option>
+          <option *ngFor="let xuatChieu of xuatChieuList" [ngValue]="xuatChieu">
+            {{xuatChieu.tenPhim}}
+          </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a [routerLink]="['/']" class="btn btn-danger" role="button"> Back to Movies List</a>
+      </td>
+      <td>
+        <button >Create Movies</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
